@@ -7,6 +7,7 @@ const Card_div = styled.div`
     border: 1px solid blue;
     width: 40%;
     height: 70%;
+    margin: 1%;
 `;
 
 const Card_name = styled.h1`

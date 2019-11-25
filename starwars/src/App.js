@@ -5,7 +5,7 @@ import StarWarsCard from './StarWarsCards';
 import styled from "styled-components";
 
 const Card_section = styled.div`
-    disply: flex;
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
