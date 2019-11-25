@@ -4,6 +4,15 @@ import axios from "axios";
 import StarWarsCard from './StarWarsCards';
 import styled from "styled-components";
 
+const Card_section = styled.div`
+    disply: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    `
+
 const App = () => {
   const [cards, setCards] = useState([]);
 
@@ -28,9 +37,11 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+        <Card_section>
           {cards.map((card, index) => {
             return <StarWarsCard name={card.name} gender={card.gender} height={card.height} mass={card.mass} eye_color={card.eye_color} hair_color={card.hair_color} key={index}/>
           })}
+        </Card_section>
     </div>
   );
 }
